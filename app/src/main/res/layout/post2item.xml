@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Crview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    app:cardElevation="20dp"
+    android:padding="10dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="40dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/PostImage"
+            android:layout_width="383dp"
+            android:layout_height="283dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tname"
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/name"
+            android:padding="10dp"
+            android:textColor="@color/cbutton"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/PostImage"
+            app:layout_constraintTop_toBottomOf="@id/PostImage"
+            app:layout_constraintVertical_bias="0.107" />
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="155dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="32dp"
+            android:hint="@string/name"
+            android:padding="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/PostImage"
+            app:layout_constraintTop_toBottomOf="@+id/PostImage" />
+
+        <TextView
+            android:id="@+id/TCondition"
+            android:layout_width="131dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/condition"
+            android:padding="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tname"
+            app:layout_constraintStart_toStartOf="@+id/tname"
+            app:layout_constraintTop_toBottomOf="@+id/tname" />
+
+        <TextView
+            android:id="@+id/tvCondition"
+            android:layout_width="152dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/condition"
+            android:padding="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tvname"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvname"
+            app:layout_constraintTop_toBottomOf="@+id/tvname" />
+
+        <TextView
+
+            android:id="@+id/Tvphone"
+            android:layout_width="143dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/phone"
+            android:padding="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/TvPrice"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/TvPrice"
+            app:layout_constraintTop_toBottomOf="@+id/TvPrice" />
+
+        <TextView
+            android:id="@+id/tvnumber"
+            android:layout_width="128dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/phone"
+            android:padding="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/Tprice"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/Tprice"
+            app:layout_constraintTop_toBottomOf="@+id/Tprice" />
+
+        <TextView
+
+            android:id="@+id/TvPrice"
+            android:layout_width="147dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/price"
+            android:padding="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tvCondition"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvCondition"
+            app:layout_constraintTop_toBottomOf="@+id/tvCondition" />
+
+        <TextView
+            android:id="@+id/Tprice"
+            android:layout_width="133dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/price"
+            android:padding="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/TCondition"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/TCondition"
+            app:layout_constraintTop_toBottomOf="@+id/TCondition" />
+
+        <TextView
+
+            android:id="@+id/TimE"
+            android:layout_width="123dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/time"
+            android:padding="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tvnumber"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvnumber"
+            app:layout_constraintTop_toBottomOf="@+id/tvnumber" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="126dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/time"
+            android:padding="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/Tvphone"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/Tvphone"
+            app:layout_constraintTop_toBottomOf="@+id/Tvphone" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
